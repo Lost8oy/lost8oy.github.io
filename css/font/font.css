@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'ErikOS';
+    src: url('ErikOS.eot');
+    src: url('ErikOSd41d.eot?#iefix') format('embedded-opentype'),
+        url('ErikOS.woff2') format('woff2'),
+        url('ErikOS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-variant-ligatures: common-ligatures;
+}

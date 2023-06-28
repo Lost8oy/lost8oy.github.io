@@ -1,0 +1,200 @@
+
+.TitleBarM {
+    height: 33px;
+    position: relative;
+    background-color: rgb(228, 219, 238);
+    color: rgb(29, 20, 43);
+    display: grid;
+    grid-template-columns: 33px 1fr;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 2px;
+}
+.Title {
+    font-family: DOS, Courier, "Courier New", monospace;
+    text-align: center;
+    position: absolute;
+    padding-top: 3px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 21px;
+}
+
+
+.Actions {
+    display: flex;
+    border-top-left-radius: 2px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-transform-origin-x: left;
+    -webkit-transform-origin-y: center;
+    -webkit-transform-origin-z: 0px;
+    transform: scale(1);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    transition-property: all;
+}
+.Action {
+    width: 33px;
+    height: 33px;
+    background-color: rgb(116, 64, 175);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.Close {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-top-left-radius: 2px;
+}
+.Close::after, .Close::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
+.Close::before {
+    transform: rotate(-45deg);
+}
+.Close::after {
+    transform: rotate(45deg);
+}
+
+.ContentM {
+    position: relative;
+    background-color: rgb(228, 219, 238);
+}
+.StyledEmail {
+    background-color: rgb(228, 219, 238);
+    padding: 20px 15px 25px 15px;
+}
+.Form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.InputT {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+    padding: 8px 10px 8px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(241, 233, 249);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(216, 204, 235);
+    cursor: not-allowed;
+}
+.InputT::before {
+    position: relative;
+    content: "To: ";
+    color: rgb(44, 33, 51);
+    margin-right: 5px;
+}
+.InputT input {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+    color: rgb(44, 33, 51);
+    background-color: rgb(241, 233, 249);
+    cursor: not-allowed;
+}
+.InputF {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+    padding: 8px 10px 8px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(241, 233, 249);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(216, 204, 235);
+}
+.InputF::before {
+    position: relative;
+    content: "From: ";
+    color: rgb(44, 33, 51);
+    margin-right: 5px;
+}
+.InputF input {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+    color: rgb(44, 33, 51);
+    background-color: rgb(241, 233, 249);
+}
+.InputS {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+    padding: 8px 10px 8px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(241, 233, 249);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(216, 204, 235);
+}
+.InputS::before {
+    position: relative;
+    content: "Subject: ";
+    color: rgb(44, 33, 51);
+    margin-right: 5px;
+}
+.InputS input {
+    width: 100%;
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+    color: rgb(44, 33, 51);
+    background-color: rgb(241, 233, 249);
+}
+.TextArea {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+    color: rgb(44, 33, 51);
+    resize: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 100%;
+    background-color: rgb(241, 233, 249);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(216, 204, 235);
+    line-height: 1.28em;
+}
+.Submit {
+    font-size: 21px;
+    font-family: DOS, Courier, "Courier New", monospace;
+    padding: 8px  5px  6px 7px;
+    color: rgb(39, 29, 107);
+    background-color: rgb(49, 248, 204);
+    box-shadow: rgba(0, 0, 0, 0.23) 4px 4px 0px 0px;
+    margin-top: auto;
+    margin-right: 4px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.Mail {
+    width: 25vw; position: absolute; top: 80px; left: 40%;
+    display: none;
+}

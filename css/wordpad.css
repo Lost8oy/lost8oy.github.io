@@ -1,0 +1,241 @@
+.WordPad {
+    display: none;
+    position: absolute;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 7px 7px 0px 0px;
+    width: 1140px; height: 649px;
+}
+
+.TitleBar {
+    height: 33px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(228, 219, 238);
+    color: rgb(29, 20, 43);
+    display: grid;
+    grid-template-columns: 66px 1fr;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 2px;
+}
+.Maximise {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    width: 16px;
+    height: 16px;
+}
+.ContentWP {
+    position: relative;
+    height: calc(100% - 31px);
+    background-color: rgb(62, 58, 68);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    top: -1px;
+    padding-top: 1px;
+    overflow:auto;
+}
+
+
+.ContentContainer {
+    position: relative;
+    height: 100%;
+}
+
+
+.StyledWordpad {
+    background-color: rgb(62, 58, 68);
+    width: 97%;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 100%;
+    padding-left: 33px;
+}
+.ContentWP2 {
+    padding-top: clamp(50px, 12%, 130px);
+    padding-right: 20px;
+    padding-bottom: clamp(50px, 12%, 130px);
+    padding-left: 20px;
+}
+.Paper {
+    width: 100%;
+    max-width: 780px;
+    min-height: 1000px;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 7px 7px 0px 0px;
+    padding-top: 75px;
+    padding-right: 65px;
+    padding-bottom: 50px;
+    padding-left: 65px;
+    color: rgb(62, 58, 68);
+}
+.TitleWP {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.BodyWP {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+    line-height: 1.38em;
+}
+.Underlay {
+    position: absolute;
+    width: calc(100% - 22px);
+    background-color: rgb(62, 58, 68);
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+.TopSizer  {
+    position: absolute;
+    width: calc(100% - 64px);
+    left: 39px;
+    top: 10px;
+    height: 21px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(50, 41, 58);
+    border-right-color: rgb(50, 41, 58);
+    border-bottom-color: rgb(50, 41, 58);
+    border-left-color: rgb(50, 41, 58);
+    border-image-source: none;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: linear-gradient(to right, rgb(49, 248, 204) 0%, rgb(49, 248, 204) 19.7%, rgb(255, 255, 255) 19.7%, rgb(255, 255, 255) 80.1%, rgb(49, 248, 204) 80.1%, rgb(49, 248, 204) 100%);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+.TopSizer::after, .TopSizer::before {
+    content: "";
+    position: absolute;
+    width: 4000px;
+}
+.TopSizer::before {
+    top: 7px;
+    height: 5px;
+    background-image: repeating-linear-gradient(to left, rgb(62, 58, 68) 0px, rgb(62, 58, 68) 2px, transparent 2px, transparent 25px);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+.TopSizer::after {
+    top: 4px;
+    height: 11px;
+    background-image: repeating-linear-gradient(to left, rgb(62, 58, 68) 0px, rgb(62, 58, 68) 2px, transparent 2px, transparent 100px);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+.LeftSizer {
+    position: absolute;
+    height: calc(100% - 46px);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    left: 10px;
+    bottom: 10px;
+    width: 21px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(50, 41, 58);
+    border-right-color: rgb(50, 41, 58);
+    border-bottom-color: rgb(50, 41, 58);
+    border-left-color: rgb(50, 41, 58);
+    border-image-source: none;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    background-image: linear-gradient(rgb(49, 248, 204) 0%, rgb(49, 248, 204) 13.9%, rgb(255, 255, 255) 13.9%, rgb(255, 255, 255) 86.1%, rgb(49, 248, 204) 86.1%, rgb(49, 248, 204) 100%);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+.LeftSizer::after, .LeftSizer::before {
+    content: "";
+    position: absolute;
+    height: 4000px;
+}
+.LeftSizer::after {
+    left: 4px;
+    width: 11px;
+    background-image: repeating-linear-gradient(rgb(62, 58, 68) 0px, rgb(62, 58, 68) 2px, transparent 2px, transparent 100px);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+.LeftSizer::before {
+    left: 7px;
+    width: 5px;
+    background-image: repeating-linear-gradient(rgb(62, 58, 68) 0px, rgb(62, 58, 68) 2px, transparent 2px, transparent 25px);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}

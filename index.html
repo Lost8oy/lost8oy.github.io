@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"           content="index.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="The Preposterous Official Website of a Lost Boy" />
+    <meta property="og:description"   content="A non-linear journey inside my corner of the internet. A world where nothing is appropriate and everything is not as it should be." />
+    <meta property="og:image"         content="img/404.jpeg" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mail.css" rel="stylesheet">
+    <link href="css/wordpad.css" rel="stylesheet">
+    <link href="css/terminal.css" rel="stylesheet">
+    <link href="css/codeeditor.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="css/mine.css" rel="stylesheet">
+    <link href="css/music.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/font/font.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Romano</title>
+</head>
+<body>
+    <!-- Loading -->
+    <div id="dosLoading">
+        <div class="dosLogo">
+          <img id="dosLogoImage" src="img/404.jpeg">
+          <div>
+            eOS 2023v1 <br>
+            Copyright (C)<br><br>
+  
+            E:\lostb\dir_
+          </div>
+        </div>
+        <ul id="taskList"></ul>
+    </div>  
+    <div class="header">
+        <div class="fullscreen"  id="fullscreen" onclick="FS()"><button><i class="bi bi-fullscreen"></i></button></div>
+        <div class="clock"></div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">R</button>
+            <div class="dropdown-content" id="myDropdown">
+                <div class="shadow"></div>
+                
+                <div class="link" onclick="showM()">contact.eml</div>
+                <div class="link" onclick="showT()">code_sample.bat</div>
+                <div class="link" onclick="showW()"style="margin-bottom:15px;">about_me.txt</div>
+                <div class="shadow" style="position: absolute; top: 110px;"></div>
+
+                <div class="dropdown2">
+                    <button class="dropbtn2" onclick="showCv()">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="save" class="DropdownIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor" d="M433.941 129.941l-83.882-83.882A48 48 0 0 0 316.118 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V163.882a48 48 0 0 0-14.059-33.941zM224 416c-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64s64 28.654 64 64c0 35.346-28.654 64-64 64zm96-304.52V212c0 6.627-5.373 12-12 12H76c-6.627 0-12-5.373-12-12V108c0-6.627 5.373-12 12-12h228.52c3.183 0 6.235 1.264 8.485 3.515l3.48 3.48A11.996 11.996 0 0 1 320 111.48z"></path>
+                        </svg>
+                        Portfolio [A:]  <i class="bi bi-caret-right-fill"></i></button>
+                </div>
+                <div class="shadow" style="position: absolute; top: 158px;"></div>
+                <div class="link" onclick="showMusic()">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-music" class="DropdownIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M16 256h256a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16zm0-128h256a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H16A16 16 0 0 0 0 80v32a16 16 0 0 0 16 16zm128 192H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM470.94 1.33l-96.53 28.51A32 32 0 0 0 352 60.34V360a148.76 148.76 0 0 0-48-8c-61.86 0-112 35.82-112 80s50.14 80 112 80 112-35.82 112-80V148.15l73-21.39a32 32 0 0 0 23-30.71V32a32 32 0 0 0-41.06-30.67z"></path>
+                    </svg>
+                    Winmap</div>
+                <div class="link" onclick="showMine()">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bomb" class="DropdownIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M440.5 88.5l-52 52L415 167c9.4 9.4 9.4 24.6 0 33.9l-17.4 17.4c11.8 26.1 18.4 55.1 18.4 85.6 0 114.9-93.1 208-208 208S0 418.9 0 304 93.1 96 208 96c30.5 0 59.5 6.6 85.6 18.4L311 97c9.4-9.4 24.6-9.4 33.9 0l26.5 26.5 52-52 17.1 17zM500 60h-24c-6.6 0-12 5.4-12 12s5.4 12 12 12h24c6.6 0 12-5.4 12-12s-5.4-12-12-12zM440 0c-6.6 0-12 5.4-12 12v24c0 6.6 5.4 12 12 12s12-5.4 12-12V12c0-6.6-5.4-12-12-12zm33.9 55l17-17c4.7-4.7 4.7-12.3 0-17-4.7-4.7-12.3-4.7-17 0l-17 17c-4.7 4.7-4.7 12.3 0 17 4.8 4.7 12.4 4.7 17 0zm-67.8 0c4.7 4.7 12.3 4.7 17 0 4.7-4.7 4.7-12.3 0-17l-17-17c-4.7-4.7-12.3-4.7-17 0-4.7 4.7-4.7 12.3 0 17l17 17zm67.8 34c-4.7-4.7-12.3-4.7-17 0-4.7 4.7-4.7 12.3 0 17l17 17c4.7 4.7 12.3 4.7 17 0 4.7-4.7 4.7-12.3 0-17l-17-17zM112 272c0-35.3 28.7-64 64-64 8.8 0 16-7.2 16-16s-7.2-16-16-16c-52.9 0-96 43.1-96 96 0 8.8 7.2 16 16 16s16-7.2 16-16z"></path>
+                    </svg>
+                    Mine Sweeper</div>
+                <div class="link" onClick="window.location.reload();"  style="margin-bottom: 10px;">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="power-off" class="DropdownIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M400 54.1c63 45 104 118.6 104 201.9 0 136.8-110.8 247.7-247.5 248C120 504.3 8.2 393 8 256.4 7.9 173.1 48.9 99.3 111.8 54.2c11.7-8.3 28-4.8 35 7.7L162.6 90c5.9 10.5 3.1 23.8-6.6 31-41.5 30.8-68 79.6-68 134.9-.1 92.3 74.5 168.1 168 168.1 91.6 0 168.6-74.2 168-169.1-.3-51.8-24.7-101.8-68.1-134-9.7-7.2-12.4-20.5-6.5-30.9l15.8-28.1c7-12.4 23.2-16.1 34.8-7.8zM296 264V24c0-13.3-10.7-24-24-24h-32c-13.3 0-24 10.7-24 24v240c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24z"></path>
+                    </svg>
+                    Restart</div>
+            </div>
+        </div> 
+    </div>
+    <div class="background">
+        <div class="wallpaper"></div>
+    </div>
+    <div class="player" id="player">
+        <div class="TitleBarM">
+            <div class="Title" style="left: 100px;">
+                <div class="TitleContent">Winmap</div>
+            </div>
+            <div class="Actions">
+                <div onclick="closeMusic()" class="Action">
+                    <div class="Close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="details">
+                <div class="track-art"></div>
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
+            </div>
+ 
+            <div class="slider_container">
+                <div class="current-time">00:00</div>
+                 <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                 <div class="total-duration">00:00</div>
+            </div>
+ 
+            <div class="buttons">
+                <div class="random-track" onclick="randomTrack()">
+                    <i class="fas fa-random fa-2x" title="random"></i>
+                </div>
+                <div class="prev-track" onclick="prevTrack()">
+                     <i class="fa fa-step-backward fa-2x"></i>
+                 </div>
+                 <div class="playpause-track" onclick="playpauseTrack()">
+                     <i class="fa fa-play-circle fa-5x"></i>
+                 </div>
+                 <div class="next-track" onclick="nextTrack()">
+                     <i class="fa fa-step-forward fa-2x"></i>
+                 </div>
+                 <div class="repeat-track" onclick="repeatTrack()">
+                     <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="box">
+        <div class="TitleBarM">
+            <div class="Title" style="left: 100px;">
+                <div class="TitleContent">20 Mines</div>
+            </div>
+            <div class="Actions">
+                <div onclick="closeMine()" class="Action">
+                    <div class="Close"></div>
+                </div>
+            </div>
+        </div>
+        <div id="field"></div><br>
+        <div id="lost" style="display: none;">
+           <h3>You got bombed!</h3>
+        </div>        
+    </div>
+    <div class="Mail" id="Mail">
+        <div class="TitleBarM">
+            <div class="Title" style="left: 100px;">
+                <div class="TitleContent">Mail</div>
+            </div>
+            <div class="Actions">
+                <div onclick="closeM()" class="Action">
+                    <div class="Close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ContentM">
+            <div class="ContentContainer">
+                <div class="StyledEmail">
+                    <form name="contact" class="Form">
+                        <div class="InputT">
+                            <input type="email" name="to" disabled="" value="lostboy404@icloud.com">
+                        </div>
+                        <div class="InputF">
+                            <input type="email" name="from" id="from" required="" value="">
+                        </div>
+                        <div class="InputS">
+                            <input type="text" name="subject"  id="subject" required="" value="">
+                        </div>
+                        <textarea placeholder="Message" name="message" id="message" required="" class="TextArea"></textarea>
+                        <input type="submit" class="Submit" value="Send email">
+                        <input type="hidden" name="form-name" value="contact">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="WordPad" id="wp" >
+        <div class="TitleBar">
+            <div class="Title" style="left:450px;">
+                <div class="TitleContent">WordPad</div>
+            </div>
+            <div class="Actions">
+                <div onclick="closeW()" class="Action" style="background-color: rgb(116, 64, 175);">
+                    <div class="Close"></div>
+                </div>
+                <div onclick="Full()" class="Action" style="background-color: rgb(197, 56, 182);">
+                    <div class="Maximise"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ContentWP">
+            <div class="ContentContainer">
+                <div class="StyledWordpad">
+                    <div class="ContentWP2">
+                        <div class="Paper">
+                            <div class="TitleWP">About me</div>
+                            <div class="BodyWP">
+                                <div>
+                                    <p>
+                                        Welcome to a non-linear journey inside my corner of the internet. A world where nothing is appropriate and everything is not as it should be. ＼(＾▽＾)／
+                                    </p>
+                                    <p> I am a tech geek with a passion for the retro art style. With a keen eye for aesthetics, I tried to accomplish a pixel perfect
+                                        layout alongside clean, maintainable and reusable code using JavaScript(),{CSS} and &lt;HTML&gt;.
+                                    </p>
+                                    <p>
+                                        I made this website with the goal to do something that felt like me, something super flawed and clumsy and kind of thoughtless, something that 
+                                        like me needed music to survive. That's why my website has a very teenage angst sountrack. <br> (＾▽＾)
+                                    </p>
+                                    <p>In my spare time I enjoy reparing thing as much as breaking them, anything nature related and going to the flee market to find all kinds of lost 
+                                        pearls (I have so many walkmans and casettes it's starting to be a problem). As you could have imagined I have a strong enthusiasm for everything
+                                        that is technology releated (IT, mechanical, material, electronics etc).
+                                    </p>
+                                    <p>
+                                        And I may or may not have a thing for the 80's...
+                                    </p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Underlay"></div>
+                <div class="TopSizer"></div>
+                <div class="LeftSizer"></div>
+            </div>
+        </div>
+    </div>
+    <div class="Terminal" id="terminal">
+        <div class="TitleBar">
+            <div class="Title" style="left: 300px;">
+                <div class="TitleContent">Terminal</div>
+            </div>
+            <div class="Actions">
+                <div onclick="closeT()" class="Action">
+                    <div class="Close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="Content">
+            <div class="ContentContainer">
+                <div class="StyledTerminal">
+                    <div class="TerminalContainer">
+                        <div class="Copyright">Copyright (C) 8.0.2 ~ Type help for available commands</div>
+                        <div class="StyledPrompt">
+                            <div class="ContainerT">
+                                <div class="Bash">C:</div>
+                                <div class="TypingArea">code_sample.bat</div>
+                            </div>
+                            <div class="StyledGrid">
+                                <a class="Row">
+                                    <div class="Heading">Label</div>
+                                    <div class="Heading">Description</div>
+                                    <div class="Heading">Year</div>
+                                </a>
+                                <a href="https://bitbucket.org/QuentinDallaserra/pego-task/src/master/" target="_blank" class="Row">
+                                    <div class="LabelT">Pego</div>
+                                    <div class="Description">Coding task [Hacker News Frontend]</div>
+                                    <div class="Year">2023</div>
+                                </a>
+                                <a href="https://bitbucket.org/QuentinDallaserra/airnow-task/src/master/" target="_blank" class="Row">
+                                    <div class="LabelT">Airnow</div>
+                                    <div class="Description">Coding task [React Dashboard]</div>
+                                    <div class="Year">2022</div>
+                                </a>
+                                <a href="https://codesandbox.io/s/thirsty-black-74664v?file=/src/index.js" target="_blank" class="Row">
+                                    <div class="LabelT">Shopworks</div>
+                                    <div class="Description">Coding task [ES6]</div>
+                                    <div class="Year">2022</div>
+                                </a>
+                                <a href="https://bitbucket.org/QuentinDallaserra/napo-task/src/master/" target="_blank" class="Row">
+                                    <div class="LabelT">Napo</div>
+                                    <div class="Description">Coding task [Movie Database Platform]</div>
+                                    <div class="Year">2022</div>
+                                </a>
+                                <a href="https://bitbucket.org/QuentinDallaserra/vitl-task/src/master/" target="_blank" class="Row">
+                                    <div class="LabelT">Vitl</div>
+                                    <div class="Description">Coding task [UI Based]</div>
+                                    <div class="Year">2019</div>
+                                </a>
+                                <a href="https://bitbucket.org/QuentinDallaserra/credit-benchmark-task/src/master/" target="_blank" class="Row">
+                                    <div class="LabelT">Credit Benchmark</div>
+                                    <div class="Description">Coding task [Financial Graph Platform]</div>
+                                    <div class="Year">2019</div>
+                                </a>
+                                <a href="https://bitbucket.org/QuentinDallaserra/qslydar/src/master/QSlydar.js" target="_blank" class="Row">
+                                    <div class="LabelT">QSlydar</div>
+                                    <div class="Description">A slider built using Prototype</div>
+                                    <div class="Year">2017</div>
+                                </a>
+                                <a href="https://bitbucket.org/QuentinDallaserra/marks-and-spencers-task/src/master/" target="_blank" class="Row">
+                                    <div class="LabelT">M&amp;S</div>
+                                    <div class="Description">Coding task [Mini Shop]</div>
+                                    <div class="Year">2017</div>
+                                </a>
+                                <a href="https://bitbucket.org/QuentinDallaserra/moodboard/src/master/" target="_blank" class="Row">
+                                    <div class="LabelT">Moodboard</div>
+                                    <div class="Description">Plugin for Twig &amp; jQuery</div>
+                                    <div class="Year">2016</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="StyledPrompt">
+                            <div class="ContainerT">
+                                <div class="Bash">C:</div>
+                                <div contenteditable="true" spellcheck="false" role="textbox" class="TypingArea" style="caret-color: unset;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="CodeEditor" id="cv">
+        <div class="TitleBar">
+            <div class="Title" style="left: 400px;">
+                <div class="TitleContent">Portfolio [A:]</div>
+            </div>
+            <div class="Actions">
+                <div onclick="closeCv()" class="Action">
+                    <div class="Close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="Content">
+            <div class="ContentContainer">
+                <div class="StyledCodeEditor">
+                    <div class="IndicesWrapper">
+                        <div class="Indices">
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">01</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">02</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">03</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">04</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">05</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">06</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">07</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">08</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">09</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">10</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">11</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">12</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">13</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">14</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">15</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">16</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">17</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">18</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">19</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">20</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">21</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">22</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">23</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">24</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">25</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">26</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">27</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">28</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">29</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">30</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">31</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">32</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">33</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">34</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">35</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">36</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">37</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">38</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">39</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">40</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">41</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">42</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">43</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">44</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">45</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">46</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">47</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">48</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">49</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">50</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">51</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">52</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">53</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">54</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">55</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">56</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">57</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">58</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">59</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">60</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">61</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">62</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">63</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">64</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">65</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">66</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">67</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">68</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">69</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">70</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">71</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">72</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">73</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">74</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">75</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">76</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">77</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">78</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">79</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">80</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">81</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">82</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">83</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">84</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">85</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">86</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">87</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">88</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">89</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">90</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">91</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">92</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">93</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">94</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">95</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">96</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">97</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">98</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">99</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">100</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">101</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">102</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">103</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">104</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">105</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">106</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">107</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">108</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">109</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">110</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">111</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">112</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">113</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">114</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">115</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">116</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">117</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">118</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">119</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">120</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">121</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">122</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">123</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">124</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">125</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">126</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">127</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">128</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">129</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">130</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">131</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">132</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">133</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">134</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">135</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">136</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">137</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">138</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">139</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">140</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">141</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">142</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">143</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">144</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">145</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">146</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">147</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">148</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">149</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">150</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">151</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">152</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">153</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">154</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">155</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">156</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">157</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">158</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">159</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">160</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">161</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">162</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">163</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">164</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">165</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">166</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">167</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">168</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">169</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">170</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">171</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">172</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">173</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">174</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">175</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">176</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">177</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">178</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">179</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">180</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">181</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">182</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">183</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">184</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">185</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">186</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">187</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">188</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">189</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">190</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">191</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">192</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">193</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">194</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">195</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">196</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">197</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">198</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">199</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">200</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">201</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">202</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">203</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">204</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">205</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">206</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">207</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">208</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">209</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">210</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">211</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">212</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">213</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">214</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">215</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">216</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">217</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">218</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">219</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">220</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">221</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">222</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">223</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">224</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">225</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">226</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">227</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">228</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">229</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">230</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">231</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">232</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">233</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">234</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">235</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">236</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">237</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">238</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">239</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">240</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">241</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">242</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">243</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">244</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">245</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">246</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">247</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">248</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">249</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">250</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">251</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">252</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">253</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">254</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">255</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">256</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">257</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">258</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">259</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">260</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">261</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">262</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">263</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">264</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">265</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">266</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">267</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">268</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">269</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">270</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">271</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">272</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">273</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">274</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">275</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">276</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">277</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">278</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">279</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">280</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">281</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">282</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">283</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">284</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">285</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">286</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">287</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">288</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">289</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">290</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">291</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">292</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">293</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">294</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">295</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">296</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">297</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">298</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">299</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">300</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">301</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">302</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">303</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">304</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">305</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">306</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">307</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">308</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">309</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">310</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">311</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">312</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">313</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">314</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">315</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">316</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">317</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">318</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">319</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">320</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">321</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">322</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">323</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">324</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">325</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">326</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">327</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">328</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">329</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">330</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">331</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">332</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">333</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">334</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">335</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">336</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">337</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">338</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">339</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">340</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">341</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">342</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">343</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">344</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">345</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">346</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">347</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">348</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">349</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">350</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">351</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">352</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">353</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">354</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">355</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">356</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">357</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">358</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">359</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">360</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">361</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">362</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">363</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">364</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">365</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">366</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">367</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">368</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">369</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">370</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">371</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">372</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">373</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">374</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">375</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">376</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">377</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">378</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">379</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">380</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">381</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">382</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">383</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">384</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">385</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">386</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">387</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">388</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">389</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">390</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">391</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">392</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">393</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">394</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">395</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">396</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">397</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">398</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">399</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">400</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">401</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">402</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">403</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">404</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">405</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">406</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">407</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">408</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">409</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">410</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">411</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">412</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">413</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">414</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">415</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">416</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">417</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">418</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">419</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">420</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">421</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">422</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">423</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">424</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">425</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">426</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">427</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">428</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">429</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">430</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">431</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">432</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">433</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">434</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">435</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">436</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">437</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">438</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">439</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">440</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">441</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">442</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">443</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">444</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">445</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">446</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">447</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">448</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">449</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">450</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">451</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">452</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">453</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">454</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">455</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">456</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">457</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">458</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">459</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">460</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">461</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">462</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">463</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">464</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">465</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">466</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">467</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">468</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">469</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">470</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">471</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">472</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">473</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">474</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">475</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">476</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">477</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">478</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">479</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">480</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">481</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">482</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">483</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">484</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">485</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">486</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">487</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">488</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">489</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">490</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">491</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">492</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">493</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">494</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">495</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">496</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">497</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">498</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">499</div>
+                            <div class="styles__Index-sc-otinkm-4 eLvZff">500</div>
+                        </div>
+                    </div>
+                    <div class="ContentCE">
+                        <div class="LineO">
+                            <span class="purple">class</span>
+                            <span class="yellow">&nbsp;RomanoArianna</span>
+                            <span class="white">&nbsp;{</span>
+                        </div>
+                        <div class="LineO">&nbsp;</div>
+                        <div class="LineV2">
+                            <div>
+                                <span class="grey">
+                                    /*&nbsp; Welcome to a non-linear journey inside my corner of the internet. A world where nothing 
+                                    is appropriate and everything is not as it should be. ＼(＾▽＾)／. This is the cv of a tech geek with a passion for the retro art style 
+                                    and obviously too much free time &nbsp;*/
+                                </span>
+                            </div>
+                        </div>
+                        <div class="LineO">&nbsp;</div>
+                        <div class="LineV2">
+                            <span class="purple">constructor</span>
+                            <span class="white">() {</span>
+                        </div>
+                        <div class="LineV4">
+                            <div class="PersonalDetail">
+                                <div class="Block">
+                                    <span class="red">this</span>
+                                    <span class="white">.</span>
+                                    <span class="blue">location</span>
+                                </div>
+                                <span class="white">&nbsp;=&nbsp;</span>
+                                <span class="green">'</span>
+                                <span class="green">Naples, IT</span>
+                                <span class="green">'</span>
+                            </div>
+                        </div>
+                        <div class="LineV4">
+                            <div class="PersonalDetail">
+                                <div class="Block">
+                                    <span class="red">this</span>
+                                    <span class="white">.</span>
+                                    <span class="blue">phoneNumber</span>
+                                </div>
+                                <span class="white">&nbsp;=&nbsp;</span>
+                                <span class="green">'</span>
+                                <span class="green">+39 3279113021</span>
+                                <span class="green">'</span>
+                            </div>
+                        </div>
+                        <div class="LineV4">
+                            <div class="PersonalDetail">
+                                <div class="Block">
+                                    <span class="red">this</span>
+                                    <span class="white">.</span>
+                                    <span class="blue">email</span>
+                                </div>
+                                <span class="white">&nbsp;=&nbsp;</span>
+                                <span class="green">'</span>
+                                <span class="green">lostboy404@icloud.com</span>
+                                <span class="green">'</span>
+                            </div>
+                        </div>
+                        <div class="LineV4">
+                            <div class="PersonalDetail">
+                                <div class="Block">
+                                    <span class="red">this</span>
+                                    <span class="white">.</span>
+                                    <span class="blue">languages</span>
+                                </div>
+                                <span class="white">&nbsp;=&nbsp;</span>
+                                <span class="green">'</span>
+                                <span class="green">Italian, English</span>
+                                <span class="green">'</span>
+                            </div>
+                        </div>
+                        <div class="LineV4">
+                            <div class="PersonalDetail">
+                                <div class="Block">
+                                    <span class="red">this</span>
+                                    <span class="white">.</span>
+                                    <span class="blue">portfolio</span>
+                                </div>
+                                <span class="white">&nbsp;=&nbsp;</span>
+                                <span class="green">'</span>
+                                <span class="green">www.lostboy404.com</span>
+                                <span class="green">'</span>
+                            </div>
+                        </div>
+                        <div class="LineV2">
+                            <span class="white">}</span>
+                        </div>
+                        <div class="LineO">&nbsp;</div>
+                        <div class="LineV2">
+                            <span class="yellow">experience</span>
+                            <span class="white">() {</span>
+                        </div>
+                        <div class="LineV4">
+                            <span class="purple">return</span>
+                            <span class="white">&nbsp;[</span>
+                        </div>
+                    <div>
+                        <div class="LineV6">
+                            <span class="white">{</span>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red"> date</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">July 2023 - August 2023
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">company</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Erasmus Valuetec
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">position</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Intern Programmer
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">role</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">
+                                        <p> Thanks to a 
+                                        </p>
+                                        <p>
+                                            Using technologies such as but not limited to: TypeScript, JavaScript, GraphQL and Apollo, Three,js, React, Chrakra UI, Auth0.</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV6">
+                            <span class="white">}
+                                <span class="green">,</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="LineV6">
+                            <span class="white">{</span>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red"> date</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">June 2021 - present
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">company</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Red Cross
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">position</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Red Cross Volunteer
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">role</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">
+                                    <p>
+                                        Working as a frontend engineer in a scrum team for a vehicle and fintech company. Maintaining, bug fixing and 
+                                        implementing new features on existing web applications using React, Redux, Sass, ES6/JavaScript, Router, Jest, etc.'
+                                    </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV6">
+                            <span class="white">}
+                                <span>,</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="LineV6">
+                            <span class="white">{</span>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red"> date</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green"> April 2023 - May 2023
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">company</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Comicon
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">position</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Comicon Employee
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div>
+                                    <span class="red">role</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">
+                                        <p>
+                                            Developing and maintaining websites and webapps for multiple clients using SCSS, BEM, ES6/JavaScript, React, 
+                                            NextJS, Sanity.io, Jquery, Wordpress, HTML, PHP, Twig, Timber, Gulp, Webpack etc.'
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV6">
+                            <span class="white">}
+                                <span>,</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="LineV6">
+                            <span class="white">{</span>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red"> date</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">September 2021 - April 2022
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">company</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">NeroFumo
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">position</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Barman
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">role</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">
+                                        <p>
+                                            Working with a large team of engineers on an Credit Rating React application using all the 
+                                            usual technologies: React, Redux, Router, styled-components, Hooks.'
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV6">
+                            <span class="white">}
+                                <span>,</span>
+                            </span>
+                        </div>
+                    </div>
+                        <div class="LineV4">
+                            <span class="white">]</span>
+                        </div>
+                        <div class="LineV2">
+                            <span class="white">}</span>
+                        </div>
+                        <div class="LineO">&nbsp;</div>
+                        <div class="LineV2">
+                            <span class="yellow">education</span>
+                            <span class="white">() {</span>
+                        </div>
+                        <div class="LineV4">
+                            <span class="purple">return</span>
+                            <span class="white">&nbsp;[</span>
+                        </div>
+                    <div>
+                        <div class="LineV6">
+                            <span class="white">{</span>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red"> date</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">July 2023 - August 2023
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">company</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Erasmus Valuetec
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">position</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Intern Programmer
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">role</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">
+                                        <p> Thanks to a 
+                                        </p>
+                                        <p>
+                                            Using technologies such as but not limited to: TypeScript, JavaScript, GraphQL and Apollo, Three,js, React, Chrakra UI, Auth0.</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV6">
+                            <span class="white">}
+                                <span class="green">,</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="LineV6">
+                            <span class="white">{</span>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red"> date</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">June 2021 - present
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">company</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Red Cross
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">position</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Red Cross Volunteer
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">role</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">
+                                    <p>
+                                        Working as a frontend engineer in a scrum team for a vehicle and fintech company. Maintaining, bug fixing and 
+                                        implementing new features on existing web applications using React, Redux, Sass, ES6/JavaScript, Router, Jest, etc.'
+                                    </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV6">
+                            <span class="white">}
+                                <span>,</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="LineV6">
+                            <span class="white">{</span>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red"> date</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green"> April 2023 - May 2023
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">company</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Comicon
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">position</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Comicon Employee
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div>
+                                    <span class="red">role</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">
+                                        <p>
+                                            Developing and maintaining websites and webapps for multiple clients using SCSS, BEM, ES6/JavaScript, React, 
+                                            NextJS, Sanity.io, Jquery, Wordpress, HTML, PHP, Twig, Timber, Gulp, Webpack etc.'
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV6">
+                            <span class="white">}
+                                <span>,</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="LineV6">
+                            <span class="white">{</span>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red"> date</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">September 2021 - April 2022
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">company</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">NeroFumo
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">position</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">Barman
+                                        <span>'</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV8">
+                            <div class="Object">
+                                <div class="Blocks">
+                                    <span class="red">role</span>
+                                </div>
+                                <span class="white">:&nbsp;</span>
+                                <span class="green">'</span>
+                                <div>
+                                    <span class="green">
+                                        <p>
+                                            Working with a large team of engineers on an Credit Rating React application using all the 
+                                            usual technologies: React, Redux, Router, styled-components, Hooks.'
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineV6">
+                            <span class="white">}
+                                <span>,</span>
+                            </span>
+                        </div>
+                    </div>
+                        <div class="LineV4">
+                            <span class="white">]</span>
+                        </div>
+                        <div class="LineV2">
+                            <span class="white">}</span>
+                        </div>
+                        <div class="LineO">&nbsp;</div>
+                        <div class="LineV2">
+                            <span class="yellow">skills</span>
+                            <span class="white">() {</span>
+                        </div>
+                        <div class="LineV4">
+                            <span class="purple">return</span>
+                            <span class="white">&nbsp;[</span>
+                        </div>
+                        <div class="LineV6">
+                            <div>
+                                <span class="green">
+                                    Adobe Photoshop, Apache, Bootstrap, C, C++, C#, Css, Django, Git, Github, HTML, 
+                                    JavaScript, Java - BasicSyntax, Love2D, Linux, MySQL, Python, PHP, SQL, Unity 2D - 3D, Visual Studio Code, WordPress
+                                </span>
+                            </div>
+                        </div>
+                        <div class="LineV4">
+                            <span class="white">]</span>
+                        </div>
+                        <div class="LineV2">
+                            <span class="white">}</span>
+                        </div>
+                        <div class="LineO">
+                            <span class="white">}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Icons" id="icons">
+        <div class="IconsWrapper">
+            <div class="IconsContainer">
+    
+
+                <div class="ContainerI" value="email_client">
+                    <div class="DesktopIcon">
+                        <div class="IconContainer">
+                            <img src="img/e6655b12f263328a9ea43f3c4072471682484297-70x49.svg"  onclick="showM()" class="IconEm">
+                        </div>
+                        <div class="Label">contact.eml</div>
+                    </div>
+                </div>
+                <div class="ContainerI" value="wordpad">
+                    <div class="DesktopIcon">
+                        <div class="IconContainer">
+                            <img src="img/ec658febeb2c6dd7ca82577abce9fa23d4be1307-65x80.svg"  onclick="showW()" class="IconAb">
+                        </div>
+                        <div class="Label">about_me.txt</div>
+                    </div>
+                </div>
+                <div class="ContainerI" value="terminal">
+                    <div class="DesktopIcon">
+                        <div class="IconContainer">
+                            <img src="img/55ac27f631da0ed5a4dbf172a66b9b5580c367b3-67x54.svg"  onclick="showT()" class="IconCode">
+                        </div>
+                        <div class="Label">code_sample.bat</div>
+                    </div>
+                </div>
+                <div class="Container" value="floppy_drive" style="transform: translate(0px, 0px);">
+                    <div class="DesktopIcon">
+                        <div class="IconContainer">
+                            <img src="img/c6f4b70006847102e7f73573970121ca410cb1da-70x68.svg"  onclick="showCv()" class="IconP">
+                        </div>
+                        <div class="Label">Portfolio [A:]</div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <script src="modules/script.js"></script>
+    <script src="modules/mine.js"></script>
+    <script src="modules/music.js"></script>
+    <script src="modules/boot.js"></script>
+</body>
+</body>
+</html>

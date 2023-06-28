@@ -1,0 +1,166 @@
+.Portfolio {
+    display: none;
+    position: absolute;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 7px 7px 0px 0px;
+    width: 1140px; height: 649px;
+}
+.StyledFloppyDrive {
+    height: 100%;
+}
+.Bar {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+    display: grid;
+    grid-template-columns: minmax(180px, 1.15fr) 2.05fr minmax(92px, 0.8fr) 63px 75px;
+    background-color: rgb(50, 41, 58);
+    column-gap: 30px;
+    top: 0px;
+    width: 100%;
+    padding-right: 16px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+.LabelP {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+    padding-left: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+    color: rgb(149, 147, 150);
+    cursor: pointer;
+    user-select: none;
+}
+.LabelP2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+    padding-left: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+    color: rgb(249, 249, 249);
+    cursor: pointer;
+    user-select: none;
+}
+
+.LabelP:first-child {
+    padding-left: 25px;
+}
+.Chevron {
+    margin-left: 8px;
+    position: relative;
+}
+.Chevron::before, .Chevron::after {
+    background-color: rgb(149, 147, 150);
+    content: "";
+    width: 6px;
+    height: 2px;
+    position: absolute;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
+.Chevron::before {
+    left: 1px;
+    top: 0px;
+    transform: rotate(0deg);
+}
+.Chevron::after {
+    left: 3px;
+    top: 0px;
+    transform: rotate(0deg);
+}
+.ContentP {
+    overflow-y: scroll;
+    height: calc(100% - 44px);
+}
+.Rows {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+}
+.RowP:first-child {
+    padding-top: 1px;
+}
+.RowP {
+    display: grid;
+    grid-template-columns: minmax(180px, 1.15fr) 2.05fr minmax(92px, 0.8fr) 63px 75px;
+    transition-duration: 0.1s, 0.1s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+    transition-property: color, background-color;
+    color: rgb(89, 91, 89);
+    cursor: default;
+    column-gap: 30px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(44, 33, 51);
+}
+.RowPg {
+    display: grid;
+    grid-template-columns: minmax(180px, 1.15fr) 2.05fr minmax(92px, 0.8fr) 63px 75px;
+    transition-duration: 0.1s, 0.1s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+    transition-property: color, background-color;
+    color: rgb(70, 159, 39);
+    cursor: pointer;
+    column-gap: 30px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(44, 33, 51);
+}
+.Column:first-child {
+    padding-left: 25px;
+}
+.Column {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 14px;
+    padding-right: 0px;
+    padding-bottom: 14px;
+    padding-left: 0px;
+}
+.pin {
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-right: 15px;
+}

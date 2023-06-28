@@ -1,0 +1,206 @@
+@font-face {font-family: "DOS"; src: url('fonts/dos.ttf');}
+@font-face {font-family: "Axis"; src: url('fonts/axis.otf');}
+@font-face {font-family: "Dot"; src: url('fonts/dot.ttf');}
+::-webkit-scrollbar-track {
+  background-image: none;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-color: rgb(50, 41, 58);
+}
+::-webkit-scrollbar-thumb {
+  background-image: none;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-color: rgb(127, 125, 129);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+::-webkit-scrollbar {
+  width: 16px;
+}
+body {
+  margin: 0;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: linear-gradient(rgb(29, 21, 74) 0%, rgb(39, 29, 109) 100%);
+}
+.wallpaper {
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+  background-image: url("../img/pattern-background.png");
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.header {
+  color: #1C152A;
+  height: 35px;
+  width: 100%;
+  background-color: #E2DCED;
+  position: relative;
+}
+
+.clock {
+    position: absolute;
+    right: 25px;
+    top: 7px;
+    font-size: 23px;
+    font-family: DOS;
+}
+.fullscreen {
+    position: absolute;
+    right: 145px;
+    height: 34px;
+}
+.fullscreen button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    top: 3px;
+}
+.fullscreen button:hover {
+    background-color: #1C152A;
+    color: #E2DCED;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 24px;  
+    border: none;
+    outline: none;
+    color: rgb(113, 39, 203);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Axis;
+    background-color: transparent;
+  }
+  
+  .dropbtn:hover {
+    background-color: rgb(118, 244, 206);
+  }
+  .dropbtn:active {
+    background-color: rgb(109, 70, 169);
+    color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    background-color: #E2DCED;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content .link {
+    float: none;
+    font-family: DOS;
+    font-size: 20px;
+    color: black;
+    padding: 12px 16px 0 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .show {
+    display: block;
+  }
+
+  .shadow {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(rgb(166, 149, 191) 50%, rgb(254, 253, 255) 50%, rgb(254, 253, 255) 100%);
+}
+.dropdown-content .link:hover {
+    background-color: rgb(109, 70, 169);
+    color: white;
+  }
+
+  .dropbtn2 {
+    background-color: transparent;
+    font-size: 19px;
+    font-family: DOS;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: none;
+  }
+  
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    left: 241px;
+    top: 0px;
+    background-color:#E2DCED;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content2 a:hover {background-color: rgb(109, 70, 169);
+    color: white;}
+  
+  .dropdown2:hover .dropdown-content2 {display: block;}
+  
+  .dropdown2:hover .dropbtn2 {background-color: rgb(109, 70, 169);
+    color: white;}
+
+    .DropdownIcon {
+      margin-right: 12px;
+      cursor: pointer;
+      user-select: none;
+      color: rgb(29, 20, 43);
+      font-size: 18px;
+      margin-top: -0.12em;
+      width: 18px;
+  }

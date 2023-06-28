@@ -1,0 +1,168 @@
+.Content {
+    position: relative;
+    height: calc(100% - 31px);
+    background-color: rgb(29, 20, 43);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    top: -1px;
+    padding-top: 1px;
+}
+.Terminal {
+    display: none;
+    position: absolute;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 7px 7px 0px 0px;
+    width: 800px; height: 649px;
+}
+.StyledTerminal {
+    height: 100%;
+}
+.TerminalContainer {
+    font-family: DOS, Courier, "Courier New", monospace;
+    font-size: 21px;
+    color: rgb(189, 189, 198);
+    line-height: 1.26em;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 100%;
+}
+.Copyright {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+    color: rgb(116, 64, 175);
+}
+.StyledPrompt {
+    display: block;
+}
+.ContainerT {
+    display: flex;
+}
+.Bash {
+    margin-right: 8px;
+    position: relative;
+    color: rgb(70, 159, 39);
+}
+.TypingArea {
+    outline-color: currentcolor;
+    outline-style: none;
+    outline-width: medium;
+    display: inline-block;
+    word-break: break-word;
+}
+.StyledGrid {
+    font-family: "Determination Mono", Courier, "Courier New", monospace;
+    font-size: 21px;
+    display: inline-flex;
+    flex-direction: column;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(189, 189, 198);
+    border-right-color: rgb(189, 189, 198);
+    border-bottom-color: rgb(189, 189, 198);
+    border-left-color: rgb(189, 189, 198);
+    border-image-source: none;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    margin-left: 18px;
+    margin-top: 13px;
+    margin-bottom: 30px;
+    line-height: 1em;
+    opacity: 0.8;
+    max-width: 700px;
+}
+.Row {
+    display: inline-grid;
+    grid-template-columns: 198px 1fr 70px;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+.Heading {
+    background-color: rgb(189, 189, 198);
+    color: rgb(29, 20, 43);
+    padding-top: 0px;
+    padding-right: 13px;
+    padding-bottom: 0px;
+    padding-left: 13px;
+    line-height: 1.26em;
+}
+.LabelT {
+    color: rgb(70, 159, 39);
+    padding-right: 14px;
+    padding-left: 13px;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: rgb(189, 189, 198);
+    text-decoration-style: solid;
+    text-decoration-color: currentcolor;
+    text-decoration-line: underline;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
+.Description {
+    color: rgb(39, 159, 135);
+    padding-right: 13px;
+    padding-left: 13px;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: rgb(189, 189, 198);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
+.Year {
+    padding-right: 14px;
+    padding-left: 13px;
+    opacity: 0.7;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
+.ContentM {
+    position: relative;
+    height: calc(100% - 31px);
+    background-color: rgb(228, 219, 238);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    top: -1px;
+    padding-top: 1px;
+}

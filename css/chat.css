@@ -1,0 +1,96 @@
+#chat-canvas  {
+    background-color: var(--black);
+    color:var(--white);
+    position:absolute;
+    right:100px;
+    bottom:-50px;
+    width:250px;
+    height:350px;
+}
+#chat-messagesContainer {
+    background-color:var(--black);
+    color:white;
+    right:100px;
+    bottom:0;
+    width:100%;
+    height:225px;
+    overflow-y:scroll;
+    padding-top:20px;
+    box-sizing:border-box;
+}
+.chat-messageInput {
+    background:none;
+    border:none;
+    color: var(--white);
+    font-size:12px;
+    padding: 10px;
+    font-family:ErikOS, monospace;
+    width:100%;
+    box-sizing:border-box;
+}
+.chat-messageCard  {
+    color: var(--white);
+    font-size:11px;
+    float:left;
+    margin-top: 10px;
+    margin-bottom:10px;
+    width:100%;
+}
+.chat-messageProfilePic {
+    background:url(../modules/img/CatProfilePic.svg);
+    height:22px;
+    width:22px;
+    float:left;
+    margin:0 7px;
+    border-radius:22px;
+}
+.chat-messageText {
+    padding:15px;
+    float:left;
+        max-width: 130px;
+        background: var(--white);
+        box-sizing:border-box;
+        color:var(--black);
+        min-height:50px;
+        line-height:15px;
+}
+#chat-remoteMessageStyle  {
+    float: left;
+}
+#chat-localMessageStyle {
+    float: right;
+}
+#chat-localMessageStyle .chat-messageProfilePic {
+    float: right;
+}
+#chat-localMessageStyle .chat-messageText {
+    float:right;
+    background:var(--aqua);
+    color:var(--black);
+}
+.chat-typingFeedbackContainer  {
+    float:left;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+.chat-typingFeedback {
+    background: var(--white);
+    color:var(--black);
+    font-size:11px;
+    float:left;
+    width:25px;
+    padding:12px;
+}
+.chat-userName {
+    background:var(--blue);
+    color:var(--white);
+    font-size:10px;
+    letter-spacing:3.6px;
+    text-transform:uppercase;
+    float:right;
+    margin-top:10px;
+    position:absolute;
+    padding:14px;
+    right:0;
+}
